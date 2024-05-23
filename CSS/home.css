@@ -1,0 +1,240 @@
+#footer-container{
+    position: relative;
+}
+
+#footer-1{
+    margin-top: 0;
+    position: relative;
+}
+
+.slide-content{
+    width: 100%;
+    height: 30vw;
+}
+
+.slide-content:hover :nth-child(4), .slide-content:hover :nth-child(5){
+    display: block;
+}
+
+.slide-image{
+    display: block;
+    width: 100%;
+}
+
+.slide-image img{
+    width: 100%;
+    vertical-align: middle;
+    height: 28vw;
+}
+
+.previous, .next{
+    cursor: pointer;
+    position: absolute;
+    top: 40%;
+    width: auto;
+    padding: 0.5vw 1vw;
+    font-size: 2vw;
+    font-weight: bolder;
+    border-radius: 50%;
+    color: white;
+    background-color: red;
+    user-select: none;
+    display: none;
+}
+
+.previous{
+    left: 2%;
+}
+
+.next{
+    right: 2%;
+}
+
+.banner-dot{
+    text-align: center;
+    background-color: black;
+    height: 5vw;
+    min-height: 20px;
+}
+
+.dot{
+    align-items: center;
+    align-items: center;
+    cursor: pointer;
+    height: 1.5vw;
+    width: 1.5vw;
+    min-height: 10px;
+    min-width: 10px;
+    background-color: #F1F1F1;
+    border: 0.15vw solid black;
+    display: inline-block;
+    border-radius: 50%;
+}
+
+.banner-dot .active{
+    background-color: red;
+}
+
+.banner-dot .active, .dot:hover{
+    cursor: pointer;
+}
+
+.fade{
+    animation-name: fade;
+    animation-duration: 1s;
+}
+
+@keyframes fade{
+    from{
+        opacity:  0.4;
+    }
+
+    to{
+        opacity: 1;
+    }
+}
+
+#opening-container, #explore-container, #authenticity-container{
+    display: flex;
+    background-color: black;
+    color: #F1F1F1;
+    padding: 1vw;
+    align-items: center;
+}
+
+#opening-text{
+    font-size: 2.5vw;
+    font-weight: bolder;
+    margin-left: 1vw;
+}
+
+#opening-image img{
+    height: 28vw;
+}
+
+.part-container{
+    padding: 2vw;
+    margin-bottom: 2vw;
+}
+
+.title{
+    font-weight: bolder;
+    font-size: 5vw;
+    text-align: center;
+}
+
+.part-type-container, #original-container{
+    justify-content: center;
+    display: flex;
+    align-items: center;
+}
+
+.part-type{
+    padding: 1vw;
+    width: 30vw;
+}
+
+#opening-image, .part-image, .logo-brand, #explore-image{
+    text-align: center;
+}
+
+.part-image img{
+    height: 15vw;
+}
+
+.text{
+    font-size: 2vw;
+    font-weight: bold;
+    text-align: center;
+}
+
+.logo-brand img{
+    height: 12vw;
+}
+
+#richard_mille{
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+#richard_mille-logo{    
+    font-size: 3vw;
+    font-weight: bolder;
+}
+
+.photo-image img{
+    height: 30vw;
+}
+
+#explore-text-container{
+    font-size: 2.5vw;
+    font-weight: bolder;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#text-check-product{
+    margin-bottom: 1vw;
+}
+
+#button-check{
+    text-align: center;
+    padding: 1vw;
+    font-size: 2.5vw;
+    width: 50%;
+    border: 0.5vw solid white;
+}
+
+#button-check:hover{
+    background-color: white;
+    color: #333;
+    cursor: pointer;
+}
+
+#authenticity-container{
+    justify-content: space-between;
+}
+
+#text-authenticity{
+    font-size: 2.5vw;
+    font-weight: bold;
+    text-align: center;
+
+}
+
+@media (max-width: 800px){
+    .title{
+        font-size: 7vw;
+    }
+
+    .text{
+        font-size: 3vw;
+    }
+
+    .part-image img{
+        height: 20vw;
+    }
+    
+    #original-image img{
+        height: 30vw;
+    }
+    
+    .logo-brand img{
+        height: 14vw;
+    }    
+}
+
+@media (max-width: 480px){
+    .part-type{
+        width: 100%;
+        margin: 2.5vw 0;
+        padding: 0;
+    }
+    
+    #richard_mille-logo{    
+        font-size: 3.5vw;
+        font-weight: bolder;
+    }
+}

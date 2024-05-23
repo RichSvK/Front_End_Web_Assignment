@@ -1,0 +1,273 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    overflow-x: hidden;
+    background-image: url('../Assets/background.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    overflow-x: hidden;
+}
+
+#navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #333;
+    color:#F1F1F1;
+}
+
+#name-website{
+    font-size: 2vw;
+    font-weight: bolder;
+    font-style: italic;
+    margin: 0.5rem;
+}
+
+.navbar-link ul{
+    display: flex;
+}
+
+.navbar-link li{
+    list-style: none;
+}
+
+.navbar-link ul li a{
+    color:#F1F1F1;
+    text-decoration: none;
+    font-size: 1.8vw;
+    display: block;
+    padding: 1.3vw;
+}
+
+.navbar-link ul li a:hover{
+    background: black;
+}
+
+.burger-menu{
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 0.2rem;
+    right: 1rem;
+    justify-content: space-between;
+    cursor: pointer;
+}
+
+.bar{
+    width: 25px;
+    height: 3px;
+    margin: 3px;
+    background-color: #F1F1F1;
+}
+
+#page-title{
+    background-image: url(../Assets/background_2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    backface-visibility: hidden;
+    height: 10vw;
+    color: aliceblue;
+    font-weight: bold;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+#page-text{
+    font-size: 5vw;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+#page-content{
+    display: flex;
+    flex-direction: column;
+    min-height: 95vh;
+}
+
+#footer-container{
+    bottom: 0;
+    width: 100%;
+    height: 19vw;
+    background-color: #333;
+    display: block;
+    color: #F1F1F1;
+    align-items: center;
+}
+
+#footer-1{
+    display: flex;
+    margin: 0.5vw 1vw 0.4vw 1vw;
+    border-bottom: 0.2vw solid blanchedalmond;
+    padding: 0.8vw 0;
+    justify-content: center;
+    height: 14.5vw;
+}
+
+.footer-part{
+    width: 22%;
+    display: flex;
+    flex-direction: column;
+}
+
+#footer{
+    width: 8%;
+    padding-right: 2vw;
+}
+
+#logo{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+
+#logo img{
+    height: 6vw;
+    width: 100%;
+}
+
+.company-link{
+    align-items: center;
+}
+
+.footer-part-title{
+    font-size: 2vw;
+    width: 80%;
+    border-bottom: 0.2vw solid blanchedalmond;
+    font-weight: bold;
+    padding-bottom: 0.5vw;
+    margin-bottom: 0.6vw;
+}
+
+.footer-link{
+    height: 9.5vw;
+}
+
+.footer-link ul{
+    align-items: center;
+    height: 100%;
+}
+
+.footer-link ul li{
+    list-style: none;
+    height: 2vw;
+    align-items: center;
+    font-size: 1.5vw;
+}
+
+.footer-link ul li a{
+    text-decoration: none;
+    color: blanchedalmond;
+}
+
+.footer-link ul li a:hover{
+    color: white;
+    font-weight: bold;
+}
+
+#container-icon{
+    display: flex;
+    column-gap: 0.5vw;
+    height: 5vw;
+}
+
+#container-icon img{
+    width: 4vw;
+    height: 4vw;
+}
+
+#copyright{
+    text-align: center;
+    font-size: 1.6vw;
+    font-weight: bold;
+    color: blanchedalmond;
+}
+
+@media (max-width: 800px){
+    #page-title{
+        height: 15vw;
+    }
+
+    #page-text{
+        font-size: 7vw;
+    }
+
+    .navbar-link ul li a{
+        font-size: 2vw;
+        padding: 1.5vw;
+    }
+
+    #container-icon img{
+        width: 3vw;
+        height: 3vw;
+    }
+}
+
+@media (max-width: 480px) {
+    #navbar{
+        flex-direction: column;
+        align-items: flex-start;
+        min-height: 30px;
+    }
+
+    #name-website{
+        font-size: 1rem;
+    }
+
+    .burger-menu{
+        display: flex;
+    }
+
+    .navbar-link{
+        display: none;
+        width: 100%;
+    }
+
+    .navbar-link ul{
+        width: 100%;
+        flex-direction: column;
+    }
+
+    .navbar-link ul li{
+        text-align: center;
+    }
+    
+    .navbar-link ul li a{
+        font-size: 3.5vw;
+        padding: 3vw;
+    }
+
+    .navbar-link.active{
+        display: flex;
+    }
+
+    #page-title{
+        height: 16vw;
+    }
+
+    #page-text{
+        font-size: 10vw;
+    }
+
+    .footer-part-title{
+        width: 80%;
+        font-size: 2.5vw;
+    }
+
+    #container-icon img{
+        width: 2.8vw;
+        height: 2.8vw;
+    }
+}

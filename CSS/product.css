@@ -1,0 +1,157 @@
+#page-content{
+    padding-top: 0;
+}
+
+.logo-bar-container{
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    color: #F1F1F1;
+    background-color: #333;
+    margin-bottom: 3vw;
+}
+
+.logo-brand-bar{
+    padding: 0.5vw;
+    width: 33.3vw;
+}
+
+.logo-brand-bar:hover, .logo-bar-container .active{
+    background-color: black;
+    color: white;
+    cursor: pointer;
+}
+
+.logo-text{
+    font-size: 2vw;
+    font-weight: bolder;
+    text-align: center;
+}
+
+.text{
+    font-size: 5vw;
+    font-weight: bold;
+}
+
+.logo-brand-image{
+    text-align: center;
+    align-items: center;
+    padding-bottom: 2vw;
+}
+
+.logo-brand-image img{
+    height: 10vw;
+}
+
+#watch-container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 0 3vw 2vw 3vw;
+}
+
+.watch{
+    width: 30vw;
+    border: 0.15vw solid;
+    border-radius: 2vw;
+    text-align: center;
+    background-color: white;
+    justify-content: center;
+    align-items: center;
+    padding-top: 2vw;
+    margin-bottom: 2vw;
+}
+
+.watch-photo{
+    text-align: center;
+    margin-bottom: 1vw;
+}
+
+.watch-photo img{
+    height: 20vw;
+}
+
+.watch-photo img:hover{
+    transform: scale(1.1)
+}
+
+.watch-description{
+    display: flex;
+    flex-direction: column;
+    font-size: 1.5vw;
+    font-weight: bold;
+}
+
+.watch-description-name{
+    font-weight: bolder;
+    font-size: 1.8vw;
+}
+
+.watch-description-price{
+    font-weight: bold;
+    color: #F1F1F1;
+    background-color: #333;
+    padding: 1vw 0;
+    font-size: 1.8vw;
+    border-bottom-left-radius: 1.85vw;
+    border-bottom-right-radius: 1.85vw;
+}
+
+.watch-description-price:hover{
+    transition: 0.5s;
+    color: white;
+    background-color: black;
+}
+
+@media (max-width: 800px){
+    .logo-text{
+        font-size: 3vw;
+    }
+
+    .watch-photo img{
+        height: 25vw;
+    }
+    
+    .watch-description{
+        font-size: 1.7vw;
+        font-weight: bold;
+    }
+}
+
+@media (max-width: 480px){
+    .logo-text{
+        font-size: 3.2vw;
+    }
+
+    .logo-brand-image{
+        padding-bottom: 2vw;
+    }
+    
+    .logo-brand-image img{
+        height: 15vw;
+    }
+
+    .watch{
+        width: 45vw;
+        margin: 0.5vw 1vw;
+        border-radius: 2vw;
+    }
+
+    .watch-photo img{
+        height: 30vw;
+    }
+    
+    .watch-description{
+        font-size: 2.5vw;
+    }
+
+    .watch-description-name{
+        font-size: 2.8vw;
+    }
+
+    .watch-description-price{
+        border-bottom-left-radius: 2vw;
+        border-bottom-right-radius: 2vw;
+    }
+}
