@@ -19,3 +19,7 @@ This website consist of 5 pages
 
 5. Contact Form Page
    A contact form is available for users to reach out to the company
+
+**Notes**
+* If the website runs on localhost, comment out line 2 instead of line 5.
+  ![image](https://github.com/RichSvK/Front_End_Web_Assignment/assets/87809864/a60c1d19-7ae7-48e2-bfa0-6ef86ca0a175)
