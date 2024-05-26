@@ -1,4 +1,8 @@
+// If the website will be run on github pages
 let root = 'https://richsvk.github.io/Front_End_Web_Assignment'
+
+// If the website will be run on localhost
+// let root = window.origin
 
 document.getElementById('navbar').innerHTML = `
     <div id="name-website">WatcHGoods</div>
