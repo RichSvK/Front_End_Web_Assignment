@@ -22,7 +22,7 @@ This website consist of 5 pages
 
 5. Branch Locations Page
    Various branch locations are shown in card format on this page. Each card of branch consists of name, email, phone number, and city location.<br>
-   ![image](https://github.com/RichSvK/Front_End_Web_Assignment/assets/87809864/fe00dfe7-36eb-4a13-bcb3-8dcd3d262657)
+   ![image](https://github.com/RichSvK/Front_End_Web_Assignment/assets/87809864/59c39cf8-a05c-4350-be5f-8e4c15382374)
 
 6. Contact Form Page
    A contact form is available for users to reach out to the company<br>
